@@ -33,7 +33,7 @@ def Q3(a, b):
     for y in range(0, b):
         Y.add(y)
 
-    [G.add[x, y] for x, y in zip(X, Y)]
+    G = list(zip(x, y))
 
     return X, Y, G
 
