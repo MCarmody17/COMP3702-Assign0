@@ -33,9 +33,8 @@ def Q3(a, b):
     for y in range(0, b):
         Y.add(y)
 
-    iterat_list = list(zip(x, y))
+    G = set(zip(x, y))
 
-    G = set(iterat_list)
     return X, Y, G
 
 
