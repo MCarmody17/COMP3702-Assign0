@@ -9,6 +9,12 @@ Answer each question in the corresponding method definition stub below
 import unittest
 
 
+def Convert(a):
+    it = iter(a)
+    res_dct = dict(zip(it, it))
+    return res_dct
+
+
 def Q1(A, B):
     union = set(A | B)
     intersection = set(A & B)
@@ -40,13 +46,11 @@ def Q3(a, b):
 
 def Q4(E, n):
     n_successors = []
-    vals = E.values()
     for x in E.values():
         if n in x:
             n_successors.append(x[1])
 
-    print(n_successors)
-    return n_successors
+    return Convert(n_successors)
 
 
 def Q5(inFile, outFile, remove):
