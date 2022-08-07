@@ -40,12 +40,12 @@ def Q3(a, b):
 
 def Q4(E, n):
     n_successors = []
-    for item in E.items():
-        for ch in item():
-            if ch[0] == n:
-                n_item = item.value().split(',')
-                n_successors.add(n_item(1))
+    vals = E.values()
+    for x in E.values():
+        if n in x:
+            n_successors.append(x[1])
 
+    print(n_successors)
     return n_successors
 
 
@@ -56,3 +56,11 @@ def Q5(inFile, outFile, remove):
 
 def Q6(state1, state2):
     print('IMPOSSIBLE')
+
+
+E = {'e1': (1, 3),
+     'e2': (2, 3, {'weight': 3.1415}),
+     'e3': (2, 4),
+     'e4': (3, 4)
+     }
+Q4(E, 2)
