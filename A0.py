@@ -41,9 +41,10 @@ def Q3(a, b):
 def Q4(E, n):
     n_successors = []
     for item in E.items():
-        if item.contains(n):
-            n_item = item.value().split(',')
-            n_successors.add(n_item(1))
+        for ch in item():
+            if ch == n:
+                n_item = item.value().split(',')
+                n_successors.add(n_item(1))
 
     return n_successors
 
