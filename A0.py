@@ -40,7 +40,7 @@ def Q3(a, b):
 def Q4(E, n):
     n_successors = []
     for x in E.values():
-        if n in x:
+        if n == x[0]:
             n_successors.append(x[1])
 
     return set(n_successors)
