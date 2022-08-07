@@ -26,15 +26,16 @@ def Q2(A, B):
 def Q3(a, b):
     X = set()
     Y = set()
-    G = set()
+
     for x in range(0, a):
         X.add(x)
 
     for y in range(0, b):
         Y.add(y)
 
-    G = list(zip(x, y))
+    iterat_list = list(zip(x, y))
 
+    G = set(iterat_list)
     return X, Y, G
 
 
