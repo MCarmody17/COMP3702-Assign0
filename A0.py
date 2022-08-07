@@ -43,7 +43,7 @@ def Q4(E, n):
         if n in x:
             n_successors.append(x[1])
 
-    return tuple(n_successors)
+    return set(n_successors)
 
 
 def Q5(inFile, outFile, remove):
