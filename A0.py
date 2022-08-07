@@ -6,6 +6,7 @@ For submission, rename this file to "A0.py"
 
 Answer each question in the corresponding method definition stub below
 """
+import unittest
 
 
 def Q1(A, B):
@@ -32,7 +33,7 @@ def Q3(a, b):
     for y in range(0, b):
         Y.add(y)
 
-    G = [[x, y] for x, y in zip(X, Y)]
+    [G.add[x, y] for x, y in zip(X, Y)]
 
     return X, Y, G
 
