@@ -42,7 +42,7 @@ def Q4(E, n):
     n_successors = []
     for item in E.items():
         for ch in item():
-            if ch == n:
+            if ch[0] == n:
                 n_item = item.value().split(',')
                 n_successors.add(n_item(1))
 
