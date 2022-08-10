@@ -88,14 +88,14 @@ def Q6(state1, state2):
             loc2 = counter2
         counter2 += 1
 
-    if(abs(loc1-loc2) == 1 or abs(loc1-loc2) == 2):
+    if(abs(loc1-loc2) != 20):
         if(loc1-loc2 == -1):
-            print("L")
+            print("R")
         elif(loc1-loc2 == 1):
             print("L")
         elif(loc1-loc2 == -3):
-            print("U")
-        elif(loc1-loc2 == 3):
             print("D")
+        elif(loc1-loc2 == 3):
+            print("U")
 
     print('IMPOSSIBLE')
