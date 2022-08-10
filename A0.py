@@ -8,6 +8,7 @@ Answer each question in the corresponding method definition stub below
 """
 
 
+from cmath import inf
 from tkinter import N
 
 
@@ -51,12 +52,21 @@ def Q4(E, n):
 
 def Q5(inFile, outFile, remove):
     arr = []
-    for ch in inFile:
+    str = ""
+    with open(inFile) as f:
+        contents = f.read()
+        print(contents)
+
+    for ch in contents:
         if ch != remove:
             arr.append(ch)
+            str += ch
         else:
             arr.append("_")
 
+    f = open(outFile, "a")
+    f.write(str)
+    f.close()
     print(arr)
     print(
         f" +---+---+---+\n | {arr[0]} | {arr[1]} | {arr[2]} | \n +---+---+---+ \n | {arr[3]} | {arr[4]} | {arr[5]} | \n +---+---+---+ \n | {arr[6]} | {arr[7]} | {arr[8]} | \n +---+---+---+")
