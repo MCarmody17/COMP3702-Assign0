@@ -49,6 +49,7 @@ def Q4(E, n):
 def Q5(inFile, outFile, remove):
     arr = []
     str = ""
+    maxDiff = None
     with open(inFile) as f:
         contents = f.read()
         print(contents)
