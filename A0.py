@@ -68,11 +68,5 @@ def Q5(inFile, outFile, remove):
         f" +---+---+---+\n | {arr[0]} | {arr[1]} | {arr[2]} | \n +---+---+---+ \n | {arr[3]} | {arr[4]} | {arr[5]} | \n +---+---+---+ \n | {arr[6]} | {arr[7]} | {arr[8]} | \n +---+---+---+")
 
 
-str = "1234_6789"
-rem = "2"
-leftover = []
-Q5(str, leftover, rem)
-
-
 def Q6(state1, state2):
     print('IMPOSSIBLE')
