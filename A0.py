@@ -8,10 +8,6 @@ Answer each question in the corresponding method definition stub below
 """
 
 
-from cmath import inf
-from tkinter import N
-
-
 def Q1(A, B):
     union = set(A | B)
     intersection = set(A & B)
