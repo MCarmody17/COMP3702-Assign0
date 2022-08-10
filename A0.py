@@ -32,6 +32,8 @@ def Q3(a, b):
     for y in range(0, b):
         Y.add(y)
 
+    print(X)
+    print(Y)
     G = set(zip(X, Y))
 
     return X, Y, G
@@ -70,28 +72,4 @@ def Q5(inFile, outFile, remove):
 
 
 def Q6(state1, state2):
-
-    counter1 = 0
-    counter2 = 0
-    for ch in state1:
-        if ch == "_":
-            for chars in state2:
-                if chars == "_":
-                    '''
-                    if abs(counter1 - counter2) != 1 or abs(counter1 - counter2) != 3:
-                        print('IMPOSSIBLE')
-                    else:
-                        '''
-                    if(counter1 - counter2 == 1):
-                        print('L')
-                    if(counter1 - counter2 == -1):
-                        print('R')
-                    if(counter1 - counter2 == 3):
-                        print('U')
-                    if(counter1 - counter2 == -3):
-                        print('D')
-
-                counter2 += 1
-        counter1 += 1
-
     print('IMPOSSIBLE')
