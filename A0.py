@@ -88,5 +88,5 @@ def Q6(state1, state2):
                             print('U')
                         if(counter1 - counter2 == -1):
                             print('D')
-            counter2 += 1
-    counter1 += 1
+                counter2 += 1
+        counter1 += 1
