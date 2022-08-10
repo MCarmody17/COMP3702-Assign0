@@ -89,11 +89,12 @@ def Q6(state1, state2):
 
         if(abs(loc1-loc2) == 1 or abs(loc1-loc2) == 3):
             if(loc1-loc2 == -1):
-                print("L")
+                print("R")
             elif(loc1-loc2 == 1):
                 print("R")
             elif(loc1-loc2 == -3):
                 print("D")
             elif(loc1-loc2 == 3):
-                print("U")
+                print("D")
+
     print('IMPOSSIBLE')
