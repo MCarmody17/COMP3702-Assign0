@@ -80,10 +80,11 @@ def Q6(state1, state2):
     for ch in state1:
         if ch == "_":
             loc1 = counter1
+
         counter1 += 1
 
     for char in state2:
-        if ch == "_":
+        if char == "_":
             loc2 = counter2
         counter2 += 1
 
