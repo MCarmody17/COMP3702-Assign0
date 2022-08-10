@@ -74,20 +74,19 @@ def Q6(state1, state2):
     counter1 = 0
     counter2 = 0
     for ch in state1:
-
         if ch == "_":
             for chars in state2:
                 if chars == "_":
-                    if abs(ch - chars) != 1 or abs(ch - chars) != 3:
+                    if abs(counter1 - counter2) != 1 or abs(counter1 - counter2) != 3:
                         print('IMPOSSIBLE')
                     else:
-                        if(ch - chars == 1):
+                        if(counter1 - counter2 == 1):
                             print('L')
-                        if(ch - chars == -1):
+                        if(counter1 - counter2 == -1):
                             print('R')
-                        if(ch - chars == -1):
+                        if(counter1 - counter2 == -1):
                             print('U')
-                        if(ch - chars == -1):
+                        if(counter1 - counter2 == -1):
                             print('D')
             counter2 += 1
     counter1 += 1
