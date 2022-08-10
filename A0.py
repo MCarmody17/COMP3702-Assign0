@@ -8,6 +8,9 @@ Answer each question in the corresponding method definition stub below
 """
 
 
+from tkinter import N
+
+
 def Q1(A, B):
     union = set(A | B)
     intersection = set(A & B)
@@ -47,8 +50,22 @@ def Q4(E, n):
 
 
 def Q5(inFile, outFile, remove):
-    print('Character '+remove+' removed from '+inFile)
-    print('Output written to '+outFile)
+    arr = []
+    for ch in inFile:
+        if ch != remove:
+            arr.append(ch)
+        else:
+            arr.append("_")
+
+    print(arr)
+    print(
+        f" +---+---+---+\n | {arr[0]} | {arr[1]} | {arr[2]} | \n +---+---+---+ \n | {arr[3]} | {arr[4]} | {arr[5]} | \n +---+---+---+ \n | {arr[6]} | {arr[7]} | {arr[8]} | \n +---+---+---+")
+
+
+str = "1234_6789"
+rem = "2"
+leftover = []
+Q5(str, leftover, rem)
 
 
 def Q6(state1, state2):
