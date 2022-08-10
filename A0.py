@@ -70,7 +70,6 @@ def Q5(inFile, outFile, remove):
 
 
 def Q6(state1, state2):
-    print(state1)
     counter1 = 0
     counter2 = 0
     for ch in state1:
@@ -92,4 +91,5 @@ def Q6(state1, state2):
                         print('D')
                 counter2 += 1
         counter1 += 1
+
     print('IMPOSSIBLE')
