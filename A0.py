@@ -75,14 +75,14 @@ def Q6(state1, state2):
         if ch == "_":
             for chars in state2:
                 if chars == "_":
-                    if abs(ch.index() - chars.index()) != 1 or abs(ch.index() - chars.index()) != 3:
+                    if abs(ch - chars) != 1 or abs(ch - chars) != 3:
                         print('IMPOSSIBLE')
                     else:
-                        if(ch.index() - chars.index() == 1):
+                        if(ch - chars == 1):
                             print('L')
-                        if(ch.index() - chars.index() == -1):
+                        if(ch - chars == -1):
                             print('R')
-                        if(ch.index() - chars.index() == -1):
+                        if(ch - chars == -1):
                             print('U')
-                        if(ch.index() - chars.index() == -1):
+                        if(ch - chars == -1):
                             print('D')
