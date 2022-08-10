@@ -72,4 +72,28 @@ def Q5(inFile, outFile, remove):
 
 
 def Q6(state1, state2):
+    loc1 = 0
+    counter1 = 0
+    loc2 = 0
+    counter2 = 0
+    for ch in state1:
+        if ch == "_":
+            loc1 = counter1
+        counter1 += 1
+
+    for char in state2:
+        if ch == "_":
+            loc2 = counter2
+        counter2 += 1
+
+    if(abs(loc1-loc2) == 1 or abs(loc1-loc2) == 3):
+        if(loc1-loc2 == -1):
+            print("L")
+        elif(loc1-loc2 == 1):
+            print("R")
+        elif(loc1-loc2 == -3):
+            print("D")
+        elif(loc1-loc2 == 3):
+            print("U")
+
     print('IMPOSSIBLE')
